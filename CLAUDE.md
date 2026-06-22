@@ -71,3 +71,10 @@ O objetivo final e contribuir no px-motor frontend (React + Vite + TanStack Rout
 - Praticar roteiro de demo (Parte 3 - decisões técnicas, Parte 4 - resumo dos sprints)
 - Simular perguntas do Kalb para praticar respostas
 - Falta no app: exibir saldo total (receitas - despesas)
+
+### Sprint 06 — concluído
+- React Router instalado (react-router-dom)
+- BrowserRouter, Routes, Route configurados no App.jsx
+- Páginas criadas em src/pages/ (Home.jsx e Sobre.jsx)
+- Componente Navbar criado em src/components/Navbar.jsx
+- Link do React Router — navegação client-side sem recarregar a página
