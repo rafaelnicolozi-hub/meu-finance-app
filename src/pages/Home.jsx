@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import TransactionCard from '../TransactionCard';
 
   const transacoesIniciais = [
-  { id: 1, descricao: "Salário", valor: 5000, tipo: "receita" },
-  { id: 2, descricao: "Aluguel", valor: 1200, tipo: "despesa" },
-  { id: 3, descricao: "Mercado", valor: 400, tipo: "despesa" },
-  { id: 4, descricao: "Transporte", valor: 200, tipo: "despesa" },
+  { id: 1, descricao: "Salário", valor: 2500, tipo: "receita" },
+  { id: 2, descricao: "Aluguel", valor: 900, tipo: "despesa" },
+  { id: 3, descricao: "Mercado", valor: 350, tipo: "despesa" },
+  { id: 4, descricao: "Transporte", valor: 230, tipo: "despesa" },
 ];
 
 function Home() {
