@@ -26,6 +26,15 @@ const transacoesFiltradas = transacoes.filter((t) => {
   if (filtro === "todas") return true;
   return t.tipo === filtro;
 });
+  // Para receitas:
+const totalReceitas = transacoes
+  .filter((t) => t.tipo === "receita")
+  .reduce((acc, t) => acc + t.valor, 0);
+
+// Para despesas:
+const totalDespesas = transacoes
+  .filter((t) => t.tipo === "despesa")
+  .reduce((acc, t) => acc + t.valor, 0);
  return (
 <div className="p-6 max-w-md mx-auto">     {/* div externa - container geral */}
     
@@ -62,7 +71,12 @@ const transacoesFiltradas = transacoes.filter((t) => {
     }}>
       Adicionar
     </button>
-</div>
+</div> {/* area de calculo total */}
+  <div className="flex justify-between mb-4 p-4 bg-gray-100 rounded-lg">
+  <p className="text-green-600 font-bold">Receitas: R$ {totalReceitas}</p>
+  <p className="text-red-600 font-bold">Despesas: R$ {totalDespesas}</p>
+  <p className="font-bold">Saldo: R$ {totalReceitas - totalDespesas}</p>
+</div> {/* area de filtro */}
 <div className="flex gap-2 mb-4">
   <button onClick={() => setFiltro("todas")} className="px-3 py-1 rounded border">Todas</button>
   <button onClick={() => setFiltro("receita")} className="px-3 py-1 rounded border">Receitas</button>
