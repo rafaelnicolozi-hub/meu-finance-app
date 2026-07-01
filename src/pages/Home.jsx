@@ -1,4 +1,4 @@
-import TransactionCard from '../TransactionCard';
+import TransactionCard from '../components/TransactionCard';
 import useTransacoes from '../hooks/useTransacoes';
 
 function Home() {

@@ -78,3 +78,9 @@ O objetivo final e contribuir no px-motor frontend (React + Vite + TanStack Rout
 - Páginas criadas em src/pages/ (Home.jsx e Sobre.jsx)
 - Componente Navbar criado em src/components/Navbar.jsx
 - Link do React Router — navegação client-side sem recarregar a página
+
+### Sprint 07 — concluído
+- Custom hook useTransacoes criado em src/hooks/
+- Lógica extraída do Home.jsx: estados, useEffect, filtros, cálculos, funções
+- Home.jsx ficou só com JSX — mais limpo e profissional
+- Aprendido: custom hooks encapsulam lógica reutilizável, componente fica só com visual
